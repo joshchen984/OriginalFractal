@@ -1,14 +1,14 @@
 void setup(){
   size(1000,1000);
   rectMode(CENTER);
-  fractal(500,500, 100);
+  fractal(300,500, 300);
 
 }
 void draw(){
 }
 
 void fractal(int x, int y, int size){
-  if(size < 10){
+  if(size < 2){
     return;
   }
   fractal(x+size, y, size/2);
